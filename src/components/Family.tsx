@@ -5,10 +5,10 @@ export default function Family() {
     return (
         <section className="py-24 px-8 bg-[#0D311F] text-[#F3E5AB] flex flex-col items-center">
             <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1 }}
+                initial={{ opacity: 0, y: 60, scale: 0.98 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
                 className="max-w-4xl w-full text-center"
             >
                 <h2 className="font-serif text-4xl md:text-5xl mb-16 text-[#D4AF37]">With the Blessings Of</h2>

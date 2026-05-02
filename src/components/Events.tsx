@@ -5,10 +5,10 @@ export default function Events() {
     return (
         <section className="py-24 px-8 bg-[#0A2617] text-[#D4AF37] flex flex-col items-center">
             <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1 }}
+                initial={{ opacity: 0, y: 60, scale: 0.98 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
                 className="max-w-4xl w-full text-center relative z-10"
             >
                 <p className="font-sans tracking-[0.2em] text-sm uppercase text-[#F3E5AB] mb-4">

@@ -41,10 +41,10 @@ export default function Countdown() {
             {/* Background Ornament */}
             <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#D4AF37 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
             <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1 }}
+                initial={{ opacity: 0, y: 60, scale: 0.98 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
                 className="z-10"
             >
                 <h2 className="font-serif text-4xl md:text-5xl mb-16 text-[#D4AF37] text-center">Countdown to Forever</h2>

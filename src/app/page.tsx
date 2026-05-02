@@ -7,9 +7,11 @@ import Countdown from "@/components/Countdown";
 import Events from "@/components/Events";
 import Family from "@/components/Family";
 import VideoHighlights from "@/components/VideoHighlights";
+import Gallery from "@/components/Gallery";
 import AudioPlayer from "@/components/AudioPlayer";
 import { CornerOrnament } from "@/components/Ornaments";
 import Petals from "@/components/Petals";
+import TouchParticles from "@/components/TouchParticles";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,10 +48,14 @@ export default function Home() {
         {/* Global falling rose petals! */}
         <Petals />
 
+        {/* Mobile magic touch trailing dust */}
+        <TouchParticles />
+
         <div className="relative z-10 bg-transparent">
           <Hero />
           <Couple />
           <VideoHighlights />
+          <Gallery />
           <Countdown />
           <Events />
           <Family />
